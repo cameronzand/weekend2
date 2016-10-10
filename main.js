@@ -15,7 +15,7 @@ for(var i = 0; i < avgPriceArr.length; i++) {
     // total = total + avgPriceArr[i]; <-- Same as +=
 }
 	//return total / avgPriceArr.length;
-	var ans = total / avgPriceArr.length;
+	var ans = (total / avgPriceArr.length).toFixed(2);
 
 	answer1.innerHTML = ans;
 };
@@ -83,13 +83,30 @@ var wood = items.filter(function (x) {
 
 var answer4 = document.getElementById("answer4");
 
-answer4.innerHTML += wood[0].title;
-answer4.innerHTML += wood[1].title;
-answer4.innerHTML += wood[2].title;
-answer4.innerHTML += wood[3].title;
-answer4.innerHTML += wood[4].title;
+// answer4.innerHTML += wood[0].title;
+// answer4.innerHTML += wood[1].title;
+// answer4.innerHTML += wood[2].title;
+// answer4.innerHTML += wood[3].title;
+// answer4.innerHTML += wood[4].title;
+var p = document.createElement("p");
+p.innerHTML = wood[0].title;
+answer4.appendChild(p);
 
+var p = document.createElement("p");
+p.innerHTML = wood[1].title;
+answer4.appendChild(p);
 
+var p = document.createElement("p");
+p.innerHTML = wood[2].title;
+answer4.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = wood[3].title;
+answer4.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = wood[4].title;
+answer4.appendChild(p);
 
 
 // Question 5
@@ -102,14 +119,29 @@ answer4.innerHTML += wood[4].title;
 
 var answer5 = document.getElementById("answer5");
 
-answer5.innerHTML += mat[0].title;
-// make page break
-answer5.innerHTML += mat[0].materials;
-// make page break
-answer5.innerHTML += mat[1].title;
-// make page break
-answer5.innerHTML += mat[1].materials;
+// answer5.innerHTML += mat[0].title;
+// // make page break
+// answer5.innerHTML += mat[0].materials;
+// // make page break
+// answer5.innerHTML += mat[1].title;
+// // make page break
+// answer5.innerHTML += mat[1].materials;
 
+var p = document.createElement("p");
+p.innerHTML = mat[0].title;
+answer5.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = mat[0].materials;
+answer5.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = mat[1].title;
+answer5.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = mat[1].materials;
+answer5.appendChild(p);
 
 
 // Question 6
