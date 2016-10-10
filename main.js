@@ -35,9 +35,65 @@ var priceRange = items.filter(function (x) {
 
 var answer2 = document.getElementById("answer2");
 
-answer2.innerHTML += priceRange[0].title;
-answer2.innerHTML += priceRange[1].title;
-answer2.innerHTML += priceRange[2].title;
+// answer2.innerHTML += priceRange[0].title;
+// answer2.innerHTML += priceRange[1].title;
+// answer2.innerHTML += priceRange[2].title;
+
+var p = document.createElement("p");
+p.innerHTML = priceRange[0].title;
+answer2.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = priceRange[1].title;
+answer2.appendChild(p);
+
+var p = document.createElement("p");
+p.innerHTML = priceRange[2].title;
+answer2.appendChild(p);
+
 
 // Question 3
+
+
+
+
+
+
+var currencyCode = items.filter(function (x) {
+	return (x.currency_code === "GBP")
+} )
+
+var answer3 = document.getElementById("answer3");
+
+answer3.innerHTML += currencyCode[0].title;
+answer3.innerHTML += currencyCode[0].price;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
