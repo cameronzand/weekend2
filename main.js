@@ -96,6 +96,31 @@ answer4.innerHTML += wood[4].title;
 
 
 
+ var mat = items.filter(function (x) {
+ 	return (x.materials.length > 8  )
+ })
+
+var answer5 = document.getElementById("answer5");
+
+answer5.innerHTML += mat[0].title;
+// make page break
+answer5.innerHTML += mat[0].materials;
+// make page break
+answer5.innerHTML += mat[1].title;
+// make page break
+answer5.innerHTML += mat[1].materials;
+
+
+
+// Question 6
+
+
+
+
+
+
+
+
 
 
 
