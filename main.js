@@ -114,8 +114,13 @@ answer5.innerHTML += mat[1].materials;
 
 // Question 6
 
+var made = items.filter(function (x) {
+	return (x.who_made === "i_did");
+	
+})
 
-
+var answer6 = document.getElementById("answer6");
+answer6.innerHTML = made.length;
 
 
 
