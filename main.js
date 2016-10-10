@@ -74,6 +74,25 @@ answer3.innerHTML += currencyCode[0].price;
 
 
 
+// Question 4
+
+var wood = items.filter(function (x) {
+	return (x.materials.includes("wood"))
+})
+
+
+var answer4 = document.getElementById("answer4");
+
+answer4.innerHTML += wood[0].title;
+answer4.innerHTML += wood[1].title;
+answer4.innerHTML += wood[2].title;
+answer4.innerHTML += wood[3].title;
+answer4.innerHTML += wood[4].title;
+
+
+
+
+// Question 5
 
 
 
